@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Handwriting Generator</title>
+	<style>
+			body {
+			background-color: #1b1b1b;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: #ffffff;
+		}
+
+			.container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 50px;
+			border-radius: 15px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+			background-color: #2b2b2b;
+		}
+
+			h1 {
+			font-size: 36px;
+			margin-bottom: 30px;
+			margin-top: 0px;
+			color: #ffffff;
+		}
+
+			textarea {
+			width: 100%;
+			height: 300px;
+			font-size: 18px;
+			padding: 10px;
+			border: none;
+			outline: none;
+			resize: none;
+			border-radius: 10px;
+			background-color: #1b1b1b;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			color: #ffffff;
+		}
+
+			button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #ffffff;
+			background-color: #dbab00;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+
+			button:hover {
+			transform: scale(1.1);
+			background-color: #e0b310;
+		}
+
+			img {
+			max-width: 100%;
+			margin-top: 30px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Handwriting Generator</h1>
+		<!--
+		<form action = "http://127.0.0.1:5000/handwriting" method="get">
+            <input type="text" name="text">
+            <input type="submit" value="Submit">
+        </form>
+	-->
+		  <form action = "handwriting" method="get">
+			<textarea id="input_text" name="text" placeholder="Type your text here" ></textarea>
+			<br>
+			<button type="submit" >Generate Handwriting</button>
+		  </form>
+
+	</div>
+</body>
+</html>
